@@ -1,0 +1,54 @@
+
+
+.todo-item{
+  display : flex;
+  justify-content: space-between;
+  padding : 16px 12px;
+  border-radius : 6px;
+  color : black;
+  margin-bottom : 12px;
+  border : 1px solid #dadada;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 5%);
+  background-color: #efefef;
+
+}
+.todo-item:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+  border-right-width: 1px!important;
+  outline: 0;
+}
+.todo-icons{
+  color : black;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  gap : 0 8px;
+  align-items: center;;
+}
+.todo-icon{
+  cursor : pointer;
+  transition : all 0.2s ease-in-out;
+  width : 18px;
+  height : 18px;
+ &:first-child{
+  color: #39C0ED;
+}
+ &:nth-child(2){
+  color: #F93154;
+}
+ &:last-child{
+  color:#00B74A;
+}
+
+&:first-child:hover{
+  opacity: 0.4;
+}
+ &:nth-child(2):hover{
+  opacity: 0.4;
+}
+ &:last-child:hover{
+  opacity: 0.4;
+}
+
+}
